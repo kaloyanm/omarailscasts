@@ -19,6 +19,11 @@ An [Omarchy](https://omarchy.org/) theme built from the original **RailsCasts** 
 
 Full palette, including derived shades and bright variants, lives in [`colors.toml`](colors.toml).
 
+## Screenshots
+
+![btop, Neovim, and a music player themed in RailsCasts](screenshot-desktop.png)
+![RailsCasts-themed wallpaper](screenshot-wallpaper.jpg)
+
 ## Installation
 
 ```bash
