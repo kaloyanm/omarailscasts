@@ -35,6 +35,8 @@ omarchy theme install https://github.com/kaloyanm/railscasts-omarchy-theme.git
 
 - **Terminal** — Alacritty, Foot, Ghostty, Kitty, Warp (`warp.yaml`)
 - **Hyprland** — window borders, `hyprlock.conf` (lock screen)
+- **Omarchy shell** — bar, notifications, launcher, menu, polkit, and lock-screen chrome (`shell.toml`), with flat accent borders instead of the default Hyprland-gradient border to match RailsCasts' flat, single-accent look
+- **Waybar** — full module styling (`waybar.css`) for anyone running it standalone instead of/alongside the Omarchy shell
 - **Shell** — fish (`colors.fish`), fzf (`fzf.fish`)
 - **Notifications & OSD** — mako (`mako.ini`), swayosd
 - **Launchers** — Walker, Wofi, Vicinae
@@ -43,7 +45,7 @@ omarchy theme install https://github.com/kaloyanm/railscasts-omarchy-theme.git
 - **Browsers** — Firefox, Zen, Chromium
 - **Misc** — Discord (Vencord), btop, Superfile, cava
 
-Files with no dedicated per-theme override (`alacritty.toml`, `foot.ini`, `ghostty.conf`, `kitty.conf`, `hyprland.lua`, `btop.theme`, `helix.toml`, `shell.toml`, etc.) are generated automatically by Omarchy from `colors.toml` at theme-apply time — nothing to maintain there.
+Files with no dedicated per-theme override (`alacritty.toml`, `foot.ini`, `ghostty.conf`, `kitty.conf`, `hyprland.lua`, `btop.theme`, `helix.toml`, etc.) are generated automatically by Omarchy from `colors.toml` at theme-apply time — nothing to maintain there.
 
 ## Note on this repo's `.git`
 

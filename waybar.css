@@ -1,2 +1,153 @@
-@define-color background #282828;
-@define-color foreground #cc7833;
+@define-color background     #282828;
+@define-color foreground     #e6e1dc;
+@define-color accent         #cc7833;
+@define-color muted          #404040;
+@define-color surface        #333435;
+@define-color red            #da4939;
+@define-color yellow         #e8bf6a;
+@define-color green          #a5c261;
+@define-color cyan           #89af90;
+@define-color blue           #6d9cbe;
+@define-color magenta        #967efb;
+
+* {
+    font-family: "JetBrainsMono Nerd Font", monospace;
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: @background;
+    color: @foreground;
+    border-bottom: 2px solid @accent;
+}
+
+tooltip {
+    background: @background;
+    border: 1px solid @accent;
+    border-radius: 4px;
+}
+
+tooltip label {
+    color: @foreground;
+}
+
+#workspaces {
+    background: transparent;
+    margin: 4px 4px;
+}
+
+#workspaces button {
+    padding: 0 8px;
+    color: @muted;
+    background: transparent;
+    border-radius: 4px;
+}
+
+#workspaces button.active {
+    color: @background;
+    background: @accent;
+}
+
+#workspaces button.urgent {
+    color: @background;
+    background: @red;
+}
+
+#workspaces button:hover {
+    background: @surface;
+    color: @foreground;
+}
+
+#window,
+#clock,
+#battery,
+#network,
+#pulseaudio,
+#cpu,
+#memory,
+#temperature,
+#tray,
+#custom-power {
+    padding: 0 10px;
+    color: @foreground;
+    background: transparent;
+}
+
+#clock {
+    color: @accent;
+    font-weight: bold;
+}
+
+#battery {
+    color: @green;
+}
+
+#battery.warning:not(.charging) {
+    color: @yellow;
+}
+
+#battery.critical:not(.charging) {
+    color: @red;
+    animation: blink 1s linear infinite alternate;
+}
+
+#battery.charging {
+    color: @cyan;
+}
+
+@keyframes blink {
+    to {
+        color: @foreground;
+    }
+}
+
+#network {
+    color: @blue;
+}
+
+#network.disconnected {
+    color: @red;
+}
+
+#pulseaudio {
+    color: @magenta;
+}
+
+#pulseaudio.muted {
+    color: @muted;
+}
+
+#cpu {
+    color: @cyan;
+}
+
+#memory {
+    color: @yellow;
+}
+
+#temperature {
+    color: @green;
+}
+
+#temperature.critical {
+    color: @red;
+}
+
+#tray {
+    background: transparent;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background: @red;
+}
+
+#custom-power {
+    color: @red;
+    padding-right: 10px;
+}
