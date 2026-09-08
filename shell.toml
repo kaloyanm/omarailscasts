@@ -1,136 +1,139 @@
-# Omarchy shell surfaces for RailsCasts. Same tokens as the generated
-# default, but borders are pinned to a flat accent color instead of the
-# Hyprland active-border gradient — RailsCasts is a flat, single-accent
-# scheme with no gradients in the source Sublime theme.
+# Omarchy shell surfaces for RailsCasts. A theme-shipped shell.toml is
+# copied verbatim (no {{ }} template substitution — that only happens for
+# .tpl files), so every value here is a literal resolved color from
+# colors.toml. Borders are pinned to the flat accent (#CC7833) instead of
+# the default Hyprland-gradient border — RailsCasts is a flat, single-accent
+# scheme with no gradients in the source Sublime theme. Bar sizing, font,
+# and spacing are bumped up for a chunkier, more substantial bar.
 
 [bar]
-background       = "{{ background }}"
+background       = "#282828"
 background-alpha = 1.0
-text             = "{{ foreground }}"
-active           = "{{ red }}"
+text             = "#E6E1DC"
+active           = "#DA4939"
 scale-with-font  = true
-size-horizontal  = 26
-size-vertical    = 28
+size-horizontal  = 36
+size-vertical    = 36
 
 [hyprland]
-active-border            = "{{ accent }}"
-active-border-foreground = "{{ accent }}"
+active-border            = "#CC7833"
+active-border-foreground = "#CC7833"
 
 [controls]
-normal-color        = "{{ foreground }}"
+normal-color        = "#E6E1DC"
 normal-fill-alpha   = 0.04
-normal-border       = "{{ foreground }}"
+normal-border       = "#E6E1DC"
 normal-border-width = 1
 normal-border-alpha = 0.4
 
-hover-cursor-color        = "{{ foreground }}"
-hover-cursor-fill-alpha   = 0.08
-hover-cursor-border       = "{{ accent }}"
-hover-cursor-border-width = 1
-hover-cursor-border-alpha = 0.35
+hover-cursor-color        = "#E6E1DC"
+hover-cursor-fill-alpha   = 0.10
+hover-cursor-border       = "#CC7833"
+hover-cursor-border-width = 2
+hover-cursor-border-alpha = 0.4
 
-focus-color        = "{{ foreground }}"
-focus-fill-alpha   = 0.08
-focus-border       = "{{ accent }}"
-focus-border-width = 1
-focus-border-alpha = 0.35
+focus-color        = "#E6E1DC"
+focus-fill-alpha   = 0.10
+focus-border       = "#CC7833"
+focus-border-width = 2
+focus-border-alpha = 0.4
 
-selected-color        = "{{ foreground }}"
-selected-fill-alpha   = 0.18
-selected-border       = "{{ accent }}"
-selected-border-width = 0
+selected-color        = "#E6E1DC"
+selected-fill-alpha   = 0.22
+selected-border       = "#CC7833"
+selected-border-width = 1
 selected-border-alpha = 1.0
 
-pressed-fill-alpha   = 0.22
+pressed-fill-alpha   = 0.26
 selection-fill-alpha = 0.35
 
 [spacing]
-scale           = 1.0
+scale           = 1.2
 scale-with-font = true
 
 [font]
-base-size = 12
+base-size = 13
 
 [popups]
-background       = "{{ background }}"
+background       = "#282828"
 background-alpha = 1.0
-text             = "{{ foreground }}"
-border           = "{{ accent }}"
+text             = "#E6E1DC"
+border           = "#CC7833"
 border-alpha     = 1.0
 
 [tooltip]
-background       = "{{ background }}"
+background       = "#282828"
 background-alpha = 0.97
-text             = "{{ foreground }}"
-border           = "{{ accent }}"
+text             = "#E6E1DC"
+border           = "#CC7833"
 border-alpha     = 1.0
 
 [notifications]
-background       = "{{ background }}"
+background       = "#282828"
 background-alpha = 1.0
-text             = "{{ foreground }}"
-border           = "{{ accent }}"
+text             = "#E6E1DC"
+border           = "#CC7833"
 border-alpha     = 1.0
-countdown        = "{{ accent }}"
+countdown        = "#CC7833"
 
 [launcher]
-background                = "{{ background }}"
+background                = "#282828"
 background-alpha          = 0.95
-text                      = "{{ foreground }}"
-border                    = "{{ accent }}"
+text                      = "#E6E1DC"
+border                    = "#CC7833"
 border-alpha              = 1.0
-scrim                     = "{{ background }}"
+scrim                     = "#282828"
 scrim-alpha               = 0.5
-selected-background       = "{{ foreground }}"
+selected-background       = "#E6E1DC"
 selected-background-alpha = 0.08
-selected-text             = "{{ accent }}"
-selected-border           = "{{ accent }}"
+selected-text             = "#CC7833"
+selected-border           = "#CC7833"
 selected-border-alpha     = 0.35
 
 [menu]
-background                = "{{ background }}"
+background                = "#282828"
 background-alpha          = 1.0
-text                      = "{{ foreground }}"
-border                    = "{{ accent }}"
+text                      = "#E6E1DC"
+border                    = "#CC7833"
 border-alpha              = 1.0
-scrim                     = "{{ background }}"
+scrim                     = "#282828"
 scrim-alpha               = 0.5
-selected-background       = "{{ foreground }}"
+selected-background       = "#E6E1DC"
 selected-background-alpha = 0.08
-selected-text             = "{{ accent }}"
-selected-border           = "{{ accent }}"
+selected-text             = "#CC7833"
+selected-border           = "#CC7833"
 selected-border-alpha     = 0.35
 
 [polkit]
-background       = "{{ background }}"
+background       = "#282828"
 background-alpha = 1.0
-text             = "{{ foreground }}"
-text-error       = "{{ red }}"
-border           = "{{ accent }}"
-border-error     = "{{ red }}"
+text             = "#E6E1DC"
+text-error       = "#DA4939"
+border           = "#CC7833"
+border-error     = "#DA4939"
 border-alpha     = 1.0
-scrim            = "{{ background }}"
+scrim            = "#282828"
 scrim-alpha      = 0.5
-accent           = "{{ accent }}"
+accent           = "#CC7833"
 
 [lock]
-background       = "{{ background }}"
+background       = "#282828"
 background-alpha = 0.8
-text             = "{{ foreground }}"
-placeholder      = "{{ mix foreground background 34% }}"
-text-error       = "{{ red }}"
-border           = "{{ accent }}"
-border-active    = "{{ accent }}"
-border-error     = "{{ red }}"
+text             = "#E6E1DC"
+placeholder      = "#A5A29F"
+text-error       = "#DA4939"
+border           = "#CC7833"
+border-active    = "#CC7833"
+border-error     = "#DA4939"
 border-alpha     = 1.0
-selection        = "{{ accent }}"
+selection        = "#CC7833"
 selection-alpha  = 0.45
 
 [image-picker]
-scrim                   = "{{ background }}"
+scrim                   = "#282828"
 scrim-alpha             = 0.5
-text                    = "{{ foreground }}"
-selected-border         = "{{ accent }}"
+text                    = "#E6E1DC"
+selected-border         = "#CC7833"
 selected-border-alpha   = 1.0
-unselected-border       = "{{ foreground }}"
+unselected-border       = "#E6E1DC"
 unselected-border-alpha = 0.28
