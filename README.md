@@ -33,7 +33,7 @@ omarchy theme set "Railscasts Omarchy Theme"
 Or, to install from this repo elsewhere:
 
 ```bash
-omarchy theme install https://github.com/kaloyanm/railscasts-omarchy-theme.git
+omarchy theme install https://github.com/kaloyanm/omarailscasts.git
 ```
 
 ## What's themed
@@ -54,7 +54,7 @@ Files with no dedicated per-theme override (`alacritty.toml`, `foot.ini`, `ghost
 
 ## Note on this repo's `.git`
 
-Omarchy decides whether a user theme was "installed from a repo" purely by checking for a `.git` directory — it doesn't check the remote. Because this directory is a git repo, `omarchy theme set` will treat `neovim.lua` and `vscode.json` as untrusted and regenerate them from `colors.toml` instead of using the custom plugin/extension references committed here. If you want those two files applied as-is, remove `.git` from the theme directory Omarchy reads from (`~/.config/omarchy/themes/railscasts-omarchy-theme`), or keep your working copy elsewhere and copy the rendered files in.
+Omarchy decides whether a user theme was "installed from a repo" purely by checking for a `.git` directory — it doesn't check the remote. Because this directory is a git repo, `omarchy theme set` will treat `neovim.lua` and `vscode.json` as untrusted and regenerate them from `colors.toml` instead of using the custom plugin/extension references committed here. If you want those two files applied as-is, remove `.git` from the theme directory Omarchy reads from (`~/.config/omarchy/themes/omarailscasts`), or keep your working copy elsewhere and copy the rendered files in.
 
 ## Source
 
