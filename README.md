@@ -1,4 +1,4 @@
-# RailsCasts Omarchy Theme
+# Omarailscasts
 
 An [Omarchy](https://omarchy.org/) theme built from the original **RailsCasts** Sublime Text colour scheme — Ryan Bates' warm dark-grey and burnt-orange palette from the classic Ruby on Rails screencasts. Soft charcoal background, cream text, and the signature `#CC7833` orange accent, carried through the terminal, Hyprland, editors, and every app Omarchy themes.
 
@@ -27,7 +27,7 @@ Full palette, including derived shades and bright variants, lives in [`colors.to
 ## Installation
 
 ```bash
-omarchy theme set "Railscasts Omarchy Theme"
+omarchy theme set "Omarailscasts"
 ```
 
 Or, to install from this repo elsewhere:
