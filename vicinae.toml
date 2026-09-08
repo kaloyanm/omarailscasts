@@ -1,0 +1,134 @@
+# Vicinae's theme docs: https://docs.vicinae.com/theming/getting-started
+
+[meta]
+name        = "RailsCasts" # Display name shown in theme picker
+description = "RailsCasts colour scheme for Vicinae; the classic Ruby on Rails screencast palette — warm dark grey canvas, cream text, and a signature burnt-orange accent." # Description shown in theme picker
+variant     = "dark" # Theme variant: "dark" or "light". Every dark theme inherits from vicinae-dark and every light theme from vicinae-light.
+
+# ============================================================================
+# Core Colors
+# ============================================================================
+# Mapping RailsCasts' base palette:
+# base00 = #282828 (background)
+# base01 = #404040 (status/secondary background)
+# base02 = #282828 (selection background)
+# base03 = #404040 (comments/invisibles)
+# base04 = #bc9458 (dark foreground / muted)
+# base05 = #e6e1dc (primary foreground)
+# base06 = #e6e1dc (light foreground)
+# base07 = #bc9458 (light background)
+# base08 = #da4939 (red)
+# base09 = #cc7833 (orange)
+# base0A = #cc7833 (amber / primary accent)
+# base0B = #a5c261 (strings / green)
+# base0C = #89af90 (cyan / support)
+# base0D = #6d9cbe (functions / blue)
+# base0E = #967efb (magenta)
+# base0F = #e8bf6a (brown/yellow)
+
+[colors.core]
+accent               = "#cc7833" # base0A - warm amber highlight
+accent_foreground    = "#282828" # dark text on bright accent
+background           = "#282828" # base00 - main background
+foreground           = "#e6e1dc" # base05 - primary text
+secondary_background = "#333435" # custom value for raised surfaces, status bars (not base01)
+border               = "#404040" # mid-contrast border
+
+# ============================================================================
+# Window-Specific Colors
+# ============================================================================
+
+[colors.main_window]
+border = "colors.core.border"
+
+[colors.settings_window]
+border = "colors.core.border"
+
+# ============================================================================
+# Accent Colors
+# ============================================================================
+# Your color palette, central to your theme's identity
+
+[colors.accents]
+blue    = "#6d9cbe" # base0D
+green   = "#a5c261" # base0B (strings / green-ish warm)
+magenta = "#967efb" # base0E
+orange  = "#cc7833" # base09
+red     = "#da4939" # base08 - primary red accent
+yellow  = "#cc7833" # base0A - warm amber
+cyan    = "#89af90" # base0C
+purple  = "#bc9458" # base04 - used as soft purple/neutral
+
+# ============================================================================
+# Text Colors
+# ============================================================================
+# Colors for various text states and meanings
+
+[colors.text]
+default     = "colors.core.foreground"
+muted       = "#bc9458" # base04 - softer creamy text
+danger      = "colors.accents.red"
+success     = "colors.accents.green"
+placeholder = "#404040" # base03 - comment / hint tone
+selection   = { background = "colors.core.accent", foreground = "colors.core.accent_foreground" }
+
+[colors.text.links]
+default = "colors.accents.yellow" # warm amber links
+visited = "colors.accents.orange" # slightly warmer / softer
+
+# ============================================================================
+# Input Fields
+# ============================================================================
+
+[colors.input]
+border       = "colors.core.border"
+border_focus = "colors.core.accent"
+border_error = "colors.accents.red"
+
+# ============================================================================
+# Buttons
+# ============================================================================
+
+[colors.button.primary]
+background = "colors.core.secondary_background"
+foreground = "colors.core.foreground"
+hover      = { background = "#6d9cbe" }
+focus      = { outline = "colors.core.accent" }
+
+# ============================================================================
+# Lists
+# ============================================================================
+
+[colors.list.item.hover]
+background = "colors.core.secondary_background"
+foreground = "colors.core.foreground"
+
+[colors.list.item.selection]
+background           = "colors.core.secondary_background"
+foreground           = "colors.core.foreground"
+secondary_background = "colors.core.border"
+secondary_foreground = "colors.core.foreground"
+
+# ============================================================================
+# Grid Items
+# ============================================================================
+
+[colors.grid.item]
+background = "colors.core.secondary_background"
+hover      = { outline = "colors.core.foreground" }
+selection  = { outline = "colors.core.accent" }
+
+# ============================================================================
+# Scrollbars
+# ============================================================================
+
+[colors.scrollbars]
+background = "colors.core.border"
+
+# ============================================================================
+# Loading Indicators
+# ============================================================================
+
+[colors.loading]
+bar     = "colors.core.foreground"
+spinner = "colors.core.foreground"

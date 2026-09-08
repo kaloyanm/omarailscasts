@@ -1,0 +1,26 @@
+name: RailsCasts
+accent: "#6d9cbe"
+cursor: "#6d9cbe"
+background: "#282828"
+foreground: "#e6e1dc"
+details: darker
+
+terminal_colors:
+  normal:
+    black:   "#282828"
+    red:     "#da4939"
+    green:   "#a5c261"
+    yellow:  "#e8bf6a"
+    blue:    "#6d9cbe"
+    magenta: "#967efb"
+    cyan:    "#89af90"
+    white:   "#ffffff"
+  bright:
+    black:   "#bc9458"
+    red:     "#f92672"
+    green:   "#a6e22e"
+    yellow:  "#ffc66d"
+    blue:    "#83abc8"
+    magenta: "#d0d0ff"
+    cyan:    "#a1bfa6"
+    white:   "#e6e1dc"
